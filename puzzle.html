@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	  <title>Личный сайт студента GeekBrains</title>
+	  <link rel="stylesheet" href="stile.css">
+    <script type="text/javascript">
+   
+      var result = 0;
+     
+      function AskQuestion(textBoxId, answer)
+      {
+         var UserAnswer  = document.getElementById(textBoxId).value;
+         if(UserAnswer == answer)
+            result++;
+
+      }
+
+       function AskQuestions()
+      {
+         AskQuestion("UserAnswer1","капуста");
+         AskQuestion("UserAnswer2","ёлка");
+
+
+
+      if(result == 2)
+        alert('Вы угадали все загадки');
+      else if(result == 1)
+        alert('Вы угадали только одну загадку');
+      else if(result == 0)
+        alert('Вы не угадали ни одной загадки');
+
+   } 
+   </script>
+    
+
+    
+</head>
+<body>
+   <div id = "header">
+           <a = href="index.html">Главная</a>
+           <a = href="puzzle.html">Угадайка</a>
+           <a = href="Zagadka.html">Загадка</a>
+           <a = href="puzzle.html">Угадайка мультиплеер</a>
+   </div>
+<div id = "content">
+    <h1>Личный сайт студента GeekBrains</h1>
+    <h3>Игра в Загадки</h3>
+    <div id = "center2">
+        <h5>Отгадай Загадки!</h5>
+        <p>Сто одежек , и все без застежек</p>
+        <input type="text" id = "UserAnswer1">
+
+        <p>Зимой и летом одним цветом</p>
+        <input type="text" id = "UserAnswer2">
+
+        <br></br>
+        <a href="#" onclick="AskQuestions();">Отправить</a>
+    </div>
+
+    
+
+
+
+
+          
+
+          
+
+    
+    <br></br>
+          </div>
+    </div>
+</div>
+
+    <br></br>
+   <div id = "footer">
+    Copyright © 2016 <a href="https://geekbrains.ru/"></a> 
+    GeekBrains <a/>
+   </div>
+
+</body>
+</html>
